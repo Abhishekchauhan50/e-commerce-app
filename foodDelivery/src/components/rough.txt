@@ -1,0 +1,113 @@
+
+const cardSlice = createSlice({
+    name:'cardList',
+    initialState:{
+        catList:[]
+    },
+    reducers:{
+        
+        catList: (state, action)=>{
+            state.catList.push(action.payload)
+        }
+    }
+    
+})
+
+export default foodslice.reducer;
+export const cardslice = cardSlice.reducer
+
+export const {signUp, login } = foodslice.actions
+export const {catList} = cardSlice.actions
+
+onClick={()=>dispatch(addCard({cardName:val.name}))}
+
+
+
+
+
+<div className='flex flex-col py-6  items-center px-10 gap-10 lg:flex-row'>
+            <div className='border  mt-24 w-80 h-80 rounded-3xl  '>
+                <img src='' alt="lll" />
+            </div>
+            <div> 
+                <div className='flex flex-col  gap-5'>
+                    <h1 className='text-4xl font-bold text-slate-400'></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aut quos aperiam quas ipsa inventore incidunt distinctio dicta rerum ad, sit soluta eveniet animi saepe nobis a accusantium dolorem corrupti?
+                    </p>
+                </div>
+                <div className='mt-5 flex flex-col gap-4'>
+                    <div className='flex items-baseline gap-2'>
+                        <span className='text-xl font-bold text-slate-400'>Prise :230/-</span><h2 className='text-3xl'></h2>
+                    </div>
+                    <button className='bg-red-600 px-2 py-2 font-bold text-xl rounded-xl'>Add to Cart  <i className='ri-shopping-cart-fill'></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div className='flex gap-3 border w-64 overflow-x-auto lg:wf'>
+    <div className='border h-48 w-[20rem] rounded-xl overflow-hidden'>
+        <img className='object-cover' src="https://wallpapercave.com/wp/wp10322912.jpg" alt="bannerimg" />
+    </div>
+    <div className='border h-48 w-[20rem] rounded-xl overflow-hidden'>
+        <img className='object-cover' src="https://wallpapercave.com/wp/wp10322912.jpg" alt="bannerimg" />
+    </div>
+    <div className='border h-48 w-[20rem] rounded-xl overflow-hidden'>
+        <img className='object-cover' src="https://wallpapercave.com/wp/wp10322912.jpg" alt="bannerimg" />
+    </div>
+</div>
+
+
+
+burger  
+
+88888888888888888888
+{
+
+
+const url = 'https://burgers-hub.p.rapidapi.com/burgers';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '0c861a96e0msh3c242a290779abap19f081jsn279bf4751c83',
+		'X-RapidAPI-Host': 'burgers-hub.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+
+
+}
+
+pizza  
+
+{
+
+const url = 'https://pizza-and-desserts.p.rapidapi.com/pizzas';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '0c861a96e0msh3c242a290779abap19f081jsn279bf4751c83',
+		'X-RapidAPI-Host': 'pizza-and-desserts.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+
+
+
+}
